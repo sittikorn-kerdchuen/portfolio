@@ -20,11 +20,11 @@ function Navbar({ isDark, dark }) {
 
         <div className=' relative top-2 lg:block md:hidden sm:hidden' id="navbar-default">
           <ul className='flex gap-5'>
-            <li className='text-xl font-bold'><Link to="home" smooth={true} duration={500}>Home</Link></li>
-            <li className='text-xl font-bold'><Link to="skill" smooth={true} duration={500}>Skill</Link></li>
-            <li className='text-xl font-bold'><Link to="project" smooth={true} duration={500}>Project</Link></li>
-            <li className='text-xl font-bold'><Link to="contact" smooth={true} duration={500}>Contact</Link></li>
-            <li className='text-xl font-bold'>
+            <li className='text-xl font-bold hover:cursor-pointer'><Link to="home" smooth={true} duration={500}>Home</Link></li>
+            <li className='text-xl font-bold hover:cursor-pointer'><Link to="skill" smooth={true} duration={500}>Skill</Link></li>
+            <li className='text-xl font-bold hover:cursor-pointer'><Link to="project" smooth={true} duration={500}>Project</Link></li>
+            <li className='text-xl font-bold hover:cursor-pointer'><Link to="contact" smooth={true} duration={500}>Contact</Link></li>
+            <li className='text-xl font-bold hover:cursor-pointer'>
               <button className='bg-yellow-500 px-2 rounded' onClick={isDark}>Dark</button>
             </li>
           </ul>
