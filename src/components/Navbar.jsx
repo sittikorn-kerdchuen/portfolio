@@ -25,7 +25,7 @@ function Navbar({ isDark, dark }) {
             <li className='text-xl font-bold hover:cursor-pointer'><Link to="project" smooth={true} duration={500}>Project</Link></li>
             <li className='text-xl font-bold hover:cursor-pointer'><Link to="contact" smooth={true} duration={500}>Contact</Link></li>
             <li className='text-xl font-bold hover:cursor-pointer'>
-              <button className='bg-yellow-500 px-2 rounded' onClick={isDark}>Dark</button>
+              <button className='bg-yellow-500 px-2 rounded' onClick={isDark}>Dark Mode</button>
             </li>
           </ul>
         </div>
@@ -64,12 +64,12 @@ function Navbar({ isDark, dark }) {
         </div>
         {mobileMenuOpen ? (
           <ul className='flex flex-col  duration-500 fixed w-1/2 right-0 h-screen text-center gap-5 top-0 bg-opacity-90 py-14 text-white bg-zinc-700'>
-            <li className='text-xl font-bold'><Link to="home" smooth={true} duration={500}>Home</Link></li>
-            <li className='text-xl font-bold'><Link to="skill" smooth={true} duration={500}>Skill</Link></li>
-            <li className='text-xl font-bold'><Link to="project" smooth={true} duration={500}>Project</Link></li>
-            <li className='text-xl font-bold'><Link to="contact" smooth={true} duration={500}>Contact</Link></li>
+            <li className='text-xl font-bold'><Link to="home" smooth={true} duration={500} onClick={toggleMobileMenu} >Home</Link></li>
+            <li className='text-xl font-bold'><Link to="skill" smooth={true} duration={500} onClick={toggleMobileMenu}>Skill</Link></li>
+            <li className='text-xl font-bold'><Link to="project" smooth={true} duration={500} onClick={toggleMobileMenu}>Project</Link></li>
+            <li className='text-xl font-bold'><Link to="contact" smooth={true} duration={500} onClick={toggleMobileMenu}>Contact</Link></li>
             <li className='text-xl font-bold mt-20'>
-              <button className='bg-yellow-500 px-2 rounded text-black' onClick={isDark}>Dark</button>
+              <button className='bg-yellow-500 px-2 rounded text-black' onClick={()=>(isDark(),toggleMobileMenu())}>Dark Mode</button>
             </li>
           </ul>
         ) :
