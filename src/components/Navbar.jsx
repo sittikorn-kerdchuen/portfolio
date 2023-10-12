@@ -1,5 +1,7 @@
 import React, { useState } from 'react'
 import { Link, Element, Events, animateScroll as scroll, scrollSpy, scroller } from 'react-scroll';
+// import image
+import logo from '../assets/logo.png'
 
 function Navbar({ isDark, dark }) {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -13,7 +15,7 @@ function Navbar({ isDark, dark }) {
       {/* desk nav */}
       <div className={dark ? 'dark-theme p-5 flex justify-between sticky top-0 z-10 md:hidden' : 'p-5 flex justify-between light-nav sticky top-0 z-10 md:hidden'}>
         <div className=''>
-          <img src="../src/assets/logo.png" width='50px' alt="" />
+          <img src={logo} width='50px' alt="" />
         </div>
 
         <div className=' relative top-2 lg:block md:hidden sm:hidden' id="navbar-default">
@@ -30,10 +32,10 @@ function Navbar({ isDark, dark }) {
       </div>
 
       {/* mobile nav */}
-      <div className='xl:hidden md:block relative mx-2' id="navbar-default">
+      <div className='2xl:hidden md:block relative mx-2' id="navbar-default">
         <div className='flex justify-between items-center'>
           <div className=''>
-            <img src="../src/assets/logo.png" width='50px' alt="" />
+            <img src={logo} width='50px' alt="" />
           </div>
           <button
             data-collapse-toggle="navbar-default"

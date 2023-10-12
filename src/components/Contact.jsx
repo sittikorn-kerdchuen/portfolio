@@ -1,5 +1,10 @@
 import React, { useRef, useState } from 'react'
 import emailjs from '@emailjs/browser'
+// image
+import char_1 from "../assets/char-1.png"
+import char_2 from "../assets/char-2.png"
+import char_3 from "../assets/char-3.png"
+import char_4 from "../assets/char-4.png"
 
 function Contact({ dark }) {
   const form = useRef();
@@ -34,20 +39,20 @@ function Contact({ dark }) {
 
   return (
     <footer className='overflow-hidden' >
-      <div className={dark ? 'dark-theme-skill p-20' : 'p-20'}>
+      <div className={dark ? 'dark-theme-skill p-20 md:p-10 sm:p-5' : 'p-20 md:p-10 sm:p-5'}>
         <section className='mb-10'>
           <h2 className='text-3xl font-bold border-b-4 pb-2 border-yellow-500'>Contact</h2>
         </section>
 
-        <article className='flex justify-between'>
-          <div className=' flex'>
-            <img src="../src/assets/char-1.png" width="250px" alt="" data-aos="zoom-in" />
-            <img src="../src/assets/char-2.png" width="80px" className='h-32 relative top-48 right-5 ' alt="" />
-            <img src="../src/assets/char-3.png" width="100px" className='h-24 relative top-60 right-80 ' alt="" />
-            <img src="../src/assets/char-4.png" width="80px" className='h-32 relative top-64 right-72' alt="" />
+        <article className='flex justify-between md:flex-col-reverse '>
+          <div className=' flex md:w-1/2 md:mx-auto md:mt-5'>
+            <img src={char_1} width="250px" alt="" data-aos="zoom-in" />
+            <img src={char_2} width="80px" className='h-32 relative top-48 right-5 md:hidden' alt="" />
+            <img src={char_3} width="100px" className='h-24 relative top-60 right-80 md:hidden' alt="" />
+            <img src={char_4} width="80px" className='h-32 relative top-64 right-72 md:hidden' alt="" />
           </div>
 
-          <div className='w-2/5'>
+          <div className='w-2/5  md:w-full'>
             <form ref={form} onSubmit={sendEmail} className='flex flex-col gap-2'>
               {/* <label>Name</label> */}
               <input type="text" name="user_name" placeholder='Name:' className=' border-2 block w-full rounded-md px-2 bg-yellow-400 input_contact text-black font-bold' value={name} required onChange={(e) => setName(e.target.value)} />
@@ -58,7 +63,7 @@ function Contact({ dark }) {
               <button type='button' className=' px-3 py-1 bg-yellow-500 mt-5 rounded-md block w-full font-bold' onClick={modalToggle}> Send </button>
 
               {/* Modal */}
-              <div className={modal ? 'block border p-10 fixed bg-zinc-400 text-black top-40 left-50 translate-x-[-90%] rounded-xl transition duration-300' : 'hidden'}>
+              <div className={modal ? 'block border p-10 fixed bg-zinc-400 text-black top-40 left-50 translate-x-[-90%] rounded-xl transition duration-300 md:left-[75%] md:p-10 md:text-center sm:left-[76%] sm:p-5 md:w-2/3' : 'hidden'}>
                 <h1 className='text-2xl font-bold mb-10'>Send Message to Sittikorn?</h1>
                 <div className='flex justify-around'>
                   <button type='button' onClick={discard} className='p-2 rounded-md block border'>Discard</button>

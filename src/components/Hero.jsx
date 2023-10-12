@@ -1,4 +1,6 @@
 import React from 'react'
+// image
+import char_1 from "../assets/char-1.png"
 
 function Hero({dark}) {
     return (
@@ -20,8 +22,8 @@ function Hero({dark}) {
             </div>
 
             <div className=' w-1/3 md:w-4/5'> 
-                <img src="../src/assets/char-1.png" width='150px' alt="" className='mx-auto  my-10 scale-x-[-1]  ' />
-                <img src="../src/assets/char-1.png" width='60px' alt="" className='mx-auto  relative -top-24 right-16 animate-bounce animate-infinite animate-duration-[1000ms]' />
+                <img src={char_1} width='150px' alt="" className='mx-auto  my-10 scale-x-[-1]  ' />
+                <img src={char_1} width='60px' alt="" className='mx-auto  relative -top-24 right-16 animate-bounce animate-infinite animate-duration-[1000ms]' />
             </div>
         </div>
     )

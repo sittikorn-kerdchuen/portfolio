@@ -8,9 +8,9 @@ function Project({ dark }) {
       </div>
 
       <div className='mt-5'>
-        <div className='grid grid-cols-3 gap-5 sm:grid-cols-1'>
+        <div className='grid grid-cols-3 gap-5 sm:grid-cols-1 md:grid-cols-2'>
 
-          <div className='border flex dark-theme card rounded-xl mt-5 sm:flex-col' data-aos="fade-right" data-aos-duration="300" >
+          <div className='border flex dark-theme card rounded-xl mt-5 sm:flex-col ' data-aos="fade-right" data-aos-duration="300" >
             <img className='rounded-xl sm:w-full w-[300px]' src="https://cdn.discordapp.com/attachments/1077952273755410444/1161163271236222976/image.png?ex=65374c91&is=6524d791&hm=8fa4da9ccd78a88e4a832e6f77ec00e069394e54cd4b12bec112b0e11ed558d7&" alt="" />
             <div className='w-1/2 sm:w-full flex flex-col justify-center pb-5'>
               <h3 className='text-center text-2xl font-bold'>Poke API</h3>
