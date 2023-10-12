@@ -17,7 +17,7 @@ import bootstrap from "../assets/bootstrap.webp"
 
 function Skill({dark}) {
   return (
-    <div className={dark?'dark-theme-skill py-20 ':'sm:py-10'}>
+    <div className={dark?'dark-theme-skill py-20 ':'sm:py-10 py-20'}>
       <h2 className='text-center text-3xl font-bold mt-5'>Skils and tool</h2> 
       <div className='m-20 mx-40 flex justify-evenly sm:flex-wrap sm:mx-10 '>
         <img src={html} alt="html"  width='80px' data-aos="fade-down" data-aos-duration="100" />

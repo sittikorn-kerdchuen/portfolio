@@ -5,6 +5,9 @@ import char_1 from "../assets/char-1.png"
 import char_2 from "../assets/char-2.png"
 import char_3 from "../assets/char-3.png"
 import char_4 from "../assets/char-4.png"
+import linkedin from "../assets/linkedin.png"
+import github from "../assets/github.png"
+import mail from "../assets/mail.png"
 
 function Contact({ dark }) {
   const form = useRef();
@@ -39,7 +42,7 @@ function Contact({ dark }) {
 
   return (
     <footer className='overflow-hidden' >
-      <div className={dark ? 'dark-theme-skill p-20 md:p-10 sm:p-5' : 'p-20 md:p-10 sm:p-5'}>
+      <div className={dark ? 'dark-theme-skill p-20 md:px-10  sm:px-5' : 'p-20 md:px-10 sm:px-5'}>
         <section className='mb-10'>
           <h2 className='text-3xl font-bold border-b-4 pb-2 border-yellow-500'>Contact</h2>
         </section>
@@ -50,6 +53,12 @@ function Contact({ dark }) {
             <img src={char_2} width="80px" className='h-32 relative top-48 right-5 md:hidden' alt="" />
             <img src={char_3} width="100px" className='h-24 relative top-60 right-80 md:hidden' alt="" />
             <img src={char_4} width="80px" className='h-32 relative top-64 right-72 md:hidden' alt="" />
+          </div>
+
+          <div className='flex mx-auto sm:w-1/4 2xl:flex-col md:flex-row sm:mt-2'>
+            <a href="https://www.linkedin.com/in/sittikorn-kerdchuen-a82b09285/" target="_blank" rel="noopener noreferrer"><img src={linkedin} alt="" className='w-[100px]' /></a>
+            <a href="https://github.com/sittikorn-kerdchuen" target="_blank" rel="noopener noreferrer"><img src={github} alt="" className='w-[100px]'/></a>
+            <a href="mailto:sittikorn.kerdchuen@gmail.com" target="_blank" rel="noopener noreferrer"><img src={mail} alt="" className='w-[100px]'/></a>
           </div>
 
           <div className='w-2/5  md:w-full'>
@@ -76,7 +85,7 @@ function Contact({ dark }) {
       </div>
 
       <div className='w-full h-24 bg-[#333] flex justify-between'>
-        <div className='flex over'>
+        <div className='flex'>
           <div className='rounded-tr-full w-24 h-24 bg-[#333] relative bottom-10 animate-bounce animate-infinite animate-duration-[5000ms]'></div>
           <div className='rounded-t-full w-24 h-24 bg-[#333] relative bottom-5 right-10 animate-bounce animate-infinite animate-duration-[4000ms]'></div>
           <div className='rounded-t-full w-32 h-24 bg-[#333] relative bottom-12 right-16 animate-bounce animate-infinite animate-duration-[3000ms]'></div>

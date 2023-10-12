@@ -3,8 +3,8 @@ import React from 'react'
 function Project({ dark }) {
   return (
     <div className={dark ? 'dark-theme p-20' : 'p-20 sm:p-5 '}>
-      <div className='border-b-4 border-yellow-500'>
-        <h2 className='text-end text-3xl font-bold py-2'>Project ของคน <span className='text-yellow-500'>คูลๆ</span></h2>
+      <div className='border-b-4 border-yellow-500 sm:pt-10'>
+        <h2 className='text-end text-3xl font-bold py-2'>Project</h2>
       </div>
 
       <div className='mt-5'>

@@ -11,7 +11,7 @@ function Navbar({ isDark, dark }) {
   }
 
   return (
-    <div>
+    <div className='fixed w-[100%] bg-zinc-900 bg-opacity-60'>
       {/* desk nav */}
       <div className={dark ? 'dark-theme p-5 flex justify-between sticky top-0 z-10 md:hidden' : 'p-5 flex justify-between light-nav sticky top-0 z-10 md:hidden'}>
         <div className=''>

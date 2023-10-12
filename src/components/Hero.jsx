@@ -5,7 +5,7 @@ import char_1 from "../assets/char-1.png"
 function Hero({dark}) {
     return (
         <div className={dark?'dark-theme p-20 flex justify-between  md:flex-col md:items-center md:p-5 ':'p-20 flex justify-between md:flex-col md:items-center md:p-5 '}>
-            <div className=''>
+            <div className='mt-10'>
                 <div className='animate-wiggle animate-infinite animate-duration-[3000ms] animate-normal'>
                     <p className='text-yellow-600 font-bold'>Hi my name is Sittikorn Kerdchuen </p>
                 </div>
