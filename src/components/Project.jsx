@@ -38,11 +38,11 @@ function Project({ dark }) {
           </div>
 
           <div className='border flex dark-theme card rounded-xl mt-5 sm:flex-col' data-aos="fade-left" data-aos-duration="700">
-            <img className='rounded-xl w-3/5 sm:w-full' src="https://cdn.discordapp.com/attachments/1077952273755410444/1161872508396507156/image.png?ex=6539e118&is=65276c18&hm=742be25361c9b0d5e29a37120307940cc594fa7e838f0ad0f163a1b09c9a0bbf&" alt="" />
+            <img className='rounded-xl w-3/5 sm:w-full' src="https://cdn.discordapp.com/attachments/1077952273755410444/1165760818634293358/image.png?ex=6548065d&is=6535915d&hm=3adc156b21b954fe0427f42e2f334af343c707ae709402a613429d7a77430758&" alt="" />
             <div className='w-1/2 flex flex-col justify-center pb-5 sm:w-full'>
-              <h3 className='text-center text-2xl font-bold'>Covid API</h3>
-              <a href="https://covid-api-ten.vercel.app/" className='block outline mx-10 text-center font-bold hover:bg-yellow-400 mt-5'>view</a>
-              <a href="https://github.com/sittikorn-kerdchuen/covid-api" className='block outline mx-10 text-center font-bold hover:bg-yellow-400 mt-5'>code</a>
+              <h3 className='text-center text-2xl font-bold'>Healty Impressed</h3>
+              <a href="https://healty-impressed-nu.vercel.app/" className='block outline mx-10 text-center font-bold hover:bg-yellow-400 mt-5'>view</a>
+              <a href="https://github.com/JSD5-TEAM12/Healty-front" className='block outline mx-10 text-center font-bold hover:bg-yellow-400 mt-5'>code</a>
             </div>
           </div>
 
