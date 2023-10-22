@@ -1,4 +1,6 @@
 import React from 'react'
+import { Link, Element, Events, animateScroll as scroll, scrollSpy, scroller } from 'react-scroll';
+
 // image
 import char_1 from "../assets/char-1.png"
 
@@ -18,7 +20,7 @@ function Hero({dark}) {
                     <p>I am a software engineer with more than 6 months of experience.</p>
                     <p>recognized as a practical and effective developer.</p>
                 </div>
-                <button className='bg-yellow-500 px-3 py-1 rounded-md text-black font-bold'>Learn me more</button>
+                <button className='bg-yellow-500 px-3 py-1 rounded-md text-black font-bold'><Link to="about" smooth={true} duration={500}>Learn me more</Link></button>
             </div>
 
             <div className=' w-1/3 md:w-4/5'> 

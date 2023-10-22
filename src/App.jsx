@@ -7,6 +7,7 @@ import Hero from './components/Hero'
 import Skill from './components/Skill'
 import Project from './components/Project'
 import Contact from './components/Contact'
+import AboutMe from './components/AboutMe';
 
 function App() {
   const [dark, setDark] = useState(false)
@@ -25,6 +26,11 @@ function App() {
         <Hero dark={dark} />
       </Element>
 
+      <Element name="about">
+        <AboutMe dark={dark} />
+      </Element>
+
+
       <Element name='skill'>
         <Skill dark={dark} />
       </Element>
@@ -36,9 +42,6 @@ function App() {
       <Element name = 'contact'>
         <Contact dark={dark} />
       </Element>
-      {/* <Skill dark={dark} /> */}
-      {/* <Project dark={dark} /> */}
-      {/* <Contact dark={dark} /> */}
     </div>
   )
 }
